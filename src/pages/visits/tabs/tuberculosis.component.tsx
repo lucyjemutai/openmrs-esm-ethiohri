@@ -5,38 +5,38 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "currentlyOnTBTreatment",
+    header: "Currently On TB Treatment",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "159798AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "eligibleForTPT",
+    header: "Eligible for TPT",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "162275AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "monthsOnRifapentine",
+    header: "Months on Rifapentine (3HP)",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "2691cc93-2e8a-4a54-bf06-fe957aa5fd08", false);
     },
   },
   {
-    key: "followupStatus",
-    header: "Followup Status",
+    key: "tbDiagnosticTestResult",
+    header: "TB Diagnostic Test Result",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "162202AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "nextVisitDate",
-    header: "Next visit date",
+    key: "tbTreatmentStatus",
+    header: "TB Treatment Status",
     getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "d4bc3007-3ba8-40ae-8d64-830bcbde56e2", false);
     },
   },
   {

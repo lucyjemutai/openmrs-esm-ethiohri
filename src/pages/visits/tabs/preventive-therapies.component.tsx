@@ -5,38 +5,52 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "cotrimoxazolePreventiveTherapyPlan",
+    header: "Cotrimoxazole Preventive Therapy plan",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "1261AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "cotriStartDate",
+    header: "Cotrimoxazole Start Date",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "164361AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "cotriAdherenceLevel",
+    header: "Adherence Level",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "161652AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "followupStatus",
-    header: "Followup Status",
+    key: "cotrimoxazoleDispensedInDays",
+    header: "Cotrimoxazole Dispensed in days",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "1f69ba7c-9cb3-4238-beec-d12affda2142", false);
     },
   },
   {
-    key: "nextVisitDate",
-    header: "Next visit date",
+    key: "fluconazolePreventiveTherapyPlan",
+    header: "Fluconazole Preventive Therapy plan",
     getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "1277AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
+    },
+  },
+  {
+    key: "fluconazoleStartDate",
+    header: "Fluconazole Start Date",
+    getValue: (encounter) => {
+      return getData(encounter, "5ac4300a-5e19-45c8-8692-31a57d6d5b8c", true);
+    },
+  },
+  {
+    key: "fluconazoleDispensedInDays",
+    header: "Fluconazole Dispensed in days",
+    getValue: (encounter) => {
+      return getData(encounter, "03dc76ef-75ab-4cdd-b24b-761c4fa3c92f", false);
     },
   },
   {

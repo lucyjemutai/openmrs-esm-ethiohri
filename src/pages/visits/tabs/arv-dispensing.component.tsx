@@ -5,38 +5,38 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "arvAdherence",
+    header: "ARV Adherence",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "da4e1fd2-727f-4677-ab5f-44058555052c", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "patientStatus",
+    header: "Patient Status",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "160433AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "regimen",
+    header: "Regimen",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "6d7d0327-e1f8-4246-bfe5-be1e82d94b14", false);
     },
   },
   {
-    key: "followupStatus",
-    header: "Followup Status",
+    key: "arvDispensedInDays",
+    header: "ARV Dispensed in days",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "3a0709e9-d7a8-44b9-9512-111db5ce3989", false);
     },
   },
   {
-    key: "nextVisitDate",
-    header: "Next visit date",
+    key: "arvSideEffects",
+    header: "ARV Side Effects",
     getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {

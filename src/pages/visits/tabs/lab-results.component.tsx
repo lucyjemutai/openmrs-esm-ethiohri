@@ -5,38 +5,38 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "viralLoadDone",
+    header: "Viral load done",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "163310AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "viralLoadCount",
+    header: "Viral load count",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "viralLoadStatus",
+    header: "Viral load status",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "2dc9ee04-4d12-4606-ae0f-86895bf14a44", false);
     },
   },
   {
-    key: "followupStatus",
-    header: "Followup Status",
+    key: "cd4Done",
+    header: "CD4 Done",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "4868dd2d-4d56-4e72-8c89-8658a32a9072", false);
     },
   },
   {
-    key: "nextVisitDate",
-    header: "Next visit date",
+    key: "cd4mm3",
+    header: "CD4 /mm3",
     getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "5497AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {

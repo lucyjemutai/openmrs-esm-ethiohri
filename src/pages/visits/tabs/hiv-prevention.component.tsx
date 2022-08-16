@@ -5,38 +5,31 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "clientSetsHIVPreventionPlan",
+    header: "HIV prevention plan",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "a3758771-f534-495e-9a3c-290acc79dda0", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "disclosureForChildren",
+    header: "Disclosure for Children",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "573f93e2-12f6-483e-aa6e-14e9b76b311a", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "enrolledToOTZ",
+    header: "Enrolled to OTZ",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "bb251925-c706-420a-a1d1-58fa2b0e0a7e", false);
     },
   },
   {
-    key: "followupStatus",
-    header: "Followup Status",
+    key: "enrollmentDate",
+    header: "OTZ Enrollment Date",
     getValue: (encounter) => {
-      return "---";
-    },
-  },
-  {
-    key: "nextVisitDate",
-    header: "Next visit date",
-    getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "160555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
     },
   },
   {

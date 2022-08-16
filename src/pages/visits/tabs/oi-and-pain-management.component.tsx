@@ -5,38 +5,31 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "opportunisticInfectionPresent",
+    header: "Opportunistic Infection Present",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "c52ecf45-bd6c-43ed-861b-9a2714878729", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "currentOpportunisticInfections",
+    header: "Current Opportunistic Infections",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "6bdf2636-7da1-4691-afcc-5eede094138f", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "assessedForPain",
+    header: "Assessed for pain",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "7c67f18a-d9ff-4e4c-8c55-35ea70b9c697", false);
     },
   },
   {
-    key: "followupStatus",
-    header: "Followup Status",
+    key: "whoPainScale",
+    header: "WHO pain scale",
     getValue: (encounter) => {
-      return "---";
-    },
-  },
-  {
-    key: "nextVisitDate",
-    header: "Next visit date",
-    getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "166000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {

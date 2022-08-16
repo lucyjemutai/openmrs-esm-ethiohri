@@ -5,38 +5,24 @@ import { getData } from "../../encounterUtils";
 
 const columns = [
   {
-    key: "followUpDate",
-    header: "Follow-Up Date",
+    key: "screenedForCervicalCancer",
+    header: "Screened for cervical cancer",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "e5e99fc7-ff2d-4306-aefd-b87a07fc9ab4", false);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "typeOfCxCaScreening",
+    header: "Type of Cx Ca Screening",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "53ff5cd0-0f37-4190-87b1-9eb439a15e94", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "managementOfCervicalLesions",
+    header: "Management of cervical lesions",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
-    },
-  },
-  {
-    key: "followupStatus",
-    header: "Followup Status",
-    getValue: (encounter) => {
-      return "---";
-    },
-  },
-  {
-    key: "nextVisitDate",
-    header: "Next visit date",
-    getValue: (encounter) => {
-      return getData(encounter, "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "3a8bb4b4-7496-415d-a327-57ae3711d4eb", false);
     },
   },
   {

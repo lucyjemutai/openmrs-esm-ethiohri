@@ -8,28 +8,21 @@ const columns = [
     key: "followUpDate",
     header: "Follow-Up Date",
     getValue: (encounter) => {
-      return getData(encounter, "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
+      return getData(encounter, "b8cd8630-56dd-495e-8c84-e36a636febe7", true);
     },
   },
   {
-    key: "artStatus",
-    header: "ART Status",
+    key: "onART",
+    header: "On antiretroviral therapy",
     getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "1149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
-    key: "artStartDate",
-    header: "ART Start Date",
+    key: "functionalStatus",
+    header: "Functional Status",
     getValue: (encounter) => {
-      return getData(encounter, "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
-    },
-  },
-  {
-    key: "followupStatus",
-    header: "Followup Status",
-    getValue: (encounter) => {
-      return "---";
+      return getData(encounter, "162753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", false);
     },
   },
   {
