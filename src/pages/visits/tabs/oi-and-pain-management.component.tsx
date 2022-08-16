@@ -1,6 +1,6 @@
 import React from "react";
 import { EncounterList } from "@ohri/openmrs-esm-ohri-commons-lib/src/index";
-import { FOLLOWUP_ENCOUNTER_TYPE } from "../../../constants";
+import { OI_AND_PAIN_MANAGEMENT_ENCOUNTER_TYPE } from "../../../constants";
 import { getData } from "../../encounterUtils";
 
 const columns = [
@@ -67,7 +67,7 @@ const OIAndPainManagementEncounterList: React.FC<{ patientUuid: string }> = ({
   return (
     <EncounterList
       patientUuid={patientUuid}
-      encounterUuid={FOLLOWUP_ENCOUNTER_TYPE}
+      encounterUuid={OI_AND_PAIN_MANAGEMENT_ENCOUNTER_TYPE}
       form={{ package: "eth-hiv", name: "oi_and_pain_management" }}
       columns={columns}
       description="OI & Pain Management Encounter List"

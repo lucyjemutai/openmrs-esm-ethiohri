@@ -1,6 +1,6 @@
 import React from "react";
 import { EncounterList } from "@ohri/openmrs-esm-ohri-commons-lib/src/index";
-import { FOLLOWUP_ENCOUNTER_TYPE } from "../../../constants";
+import { HIV_PREVENTION_ENCOUNTER_TYPE } from "../../../constants";
 import { getData } from "../../encounterUtils";
 
 const columns = [
@@ -67,7 +67,7 @@ const HIVPreventionEncounterList: React.FC<{ patientUuid: string }> = ({
   return (
     <EncounterList
       patientUuid={patientUuid}
-      encounterUuid={FOLLOWUP_ENCOUNTER_TYPE}
+      encounterUuid={HIV_PREVENTION_ENCOUNTER_TYPE}
       form={{ package: "eth-hiv", name: "hiv_prevention" }}
       columns={columns}
       description="HIV Prevention Encounter List"
