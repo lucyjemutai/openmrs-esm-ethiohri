@@ -1,0 +1,251 @@
+{
+	"name": "POC Cervical Cancer Form",
+	"pages": [
+		{
+			"label": "Cervical Cancer",
+			"sections": [
+				{
+					"label": "Cervical Cancer Screening & Treatment",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Screened for cervical cancer",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "e5e99fc7-ff2d-4306-aefd-b87a07fc9ab4",
+								"answers": [
+									{
+										"concept": "165618AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Cx Ca screening not done",
+										"conceptMappings": [
+											{
+												"type": "SNOMED-CT",
+												"value": "4461000175108"
+											},
+											{
+												"type": "CIEL",
+												"value": "165618"
+											}
+										]
+									},
+									{
+										"concept": "165619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Screened for cervical cancer",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "165619"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "268543007"
+											}
+										]
+									}
+								],
+								"conceptMappings": [
+									{
+										"type": "OCT",
+										"value": "CervicalCancerScreeening_ConvSet"
+									}
+								]
+							},
+							"id": "screenedForCervicalCancer"
+						},
+						{
+							"label": "Type of Cx Ca Screening",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "53ff5cd0-0f37-4190-87b1-9eb439a15e94",
+								"answers": [
+									{
+										"concept": "160705AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Colposcopy",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "160705"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "392003006"
+											},
+											{
+												"type": "IMO-ProcedureIT",
+												"value": "1241"
+											}
+										]
+									},
+									{
+										"concept": "9580690a-0e84-451a-ada9-c4478d999dc2",
+										"label": "Human Papillomavirus test",
+										"conceptMappings": []
+									},
+									{
+										"concept": "885AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Papanicolaou smear",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "885"
+											},
+											{
+												"type": "AMPATH",
+												"value": "41"
+											},
+											{
+												"type": "CIEL",
+												"value": "885"
+											},
+											{
+												"type": "IMO-ProcedureIT",
+												"value": "1064218"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "90226004"
+											}
+										]
+									},
+									{
+										"concept": "8304ffef-ac7b-425c-af3b-6ddc4d052ca8",
+										"label": "Visual Inspection of the Cervix with Acetic Acid (VIA)",
+										"conceptMappings": []
+									},
+									{
+										"concept": "46184e00-3417-4b88-9ef5-9990a0979b1a",
+										"label": "Visual Inspection of the Cervix with Lugolâs Iodine (VILI)",
+										"conceptMappings": []
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "screenedForCervicalCancer != '165619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "typeOfCxCaScreening"
+						},
+						{
+							"label": "Management of cervical lesions",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "3a8bb4b4-7496-415d-a327-57ae3711d4eb",
+								"answers": [
+									{
+										"concept": "82fdc4f5-338e-4c22-8856-65ca9cb53fa3",
+										"label": "Cold knife cone biopsy of cervix",
+										"conceptMappings": []
+									},
+									{
+										"concept": "162812AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Cryosurgery of lesion of cervix",
+										"conceptMappings": []
+									},
+									{
+										"concept": "159837AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Hysterectomy",
+										"conceptMappings": [
+											{
+												"type": "SNOMED-CT",
+												"value": "236886002"
+											},
+											{
+												"type": "IMO-ProcedureIT",
+												"value": "667244"
+											},
+											{
+												"type": "CIEL",
+												"value": "159837"
+											}
+										]
+									},
+									{
+										"concept": "165084AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Loop electrosurgical excision procedure of cervix",
+										"conceptMappings": []
+									},
+									{
+										"concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "None",
+										"conceptMappings": [
+											{
+												"type": "PIH-Malawi",
+												"value": "1107"
+											},
+											{
+												"type": "PIH",
+												"value": "1107"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1107"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "260413007"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "NONE"
+											},
+											{
+												"type": "CIEL",
+												"value": "1107"
+											}
+										]
+									},
+									{
+										"concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Other non-coded",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "5622"
+											},
+											{
+												"type": "CIEL",
+												"value": "5622"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "OTHER"
+											},
+											{
+												"type": "SNOMED-MVP",
+												"value": "56221000105001"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "6408"
+											},
+											{
+												"type": "PIH",
+												"value": "5622"
+											}
+										]
+									},
+									{
+										"concept": "166706AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Thermocauterization of cervix",
+										"conceptMappings": []
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "screenedForCervicalCancer != '165619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "managementOfCervicalLesions"
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"uuid": "xxxx",
+	"referencedForms": [],
+	"encounterType": "136b2ded-22a3-4831-a39a-088d35a50ef5",
+	"allowUnspecifiedAll": true
+}

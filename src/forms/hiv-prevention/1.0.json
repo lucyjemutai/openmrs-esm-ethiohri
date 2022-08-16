@@ -1,0 +1,210 @@
+{
+	"name": "POC HIV Prevention Form",
+	"pages": [
+		{
+			"label": "HIV Prevention",
+			"sections": [
+				{
+					"label": "Client sets HIV prevention plan",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Client sets HIV prevention plan",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "a3758771-f534-495e-9a3c-290acc79dda0",
+								"answers": [
+									{
+										"concept": "8c3aeb01-71d6-42df-9d70-606586fd8561",
+										"label": "Agreed to disclose to partner / friend / family",
+										"conceptMappings": []
+									},
+									{
+										"concept": "9ad0a69e-9725-4c3b-ac8c-f68c29fece79",
+										"label": "Agreed to bring child for testing",
+										"conceptMappings": []
+									},
+									{
+										"concept": "1a093518-7d2d-44a7-a2dc-e3cc84f3df31",
+										"label": "Discussed & agreed to practice safer sex",
+										"conceptMappings": []
+									},
+									{
+										"concept": "cf907a84-caca-4b80-b873-52a4ebad27cf",
+										"label": "Decides to avoid or decrease substance use",
+										"conceptMappings": []
+									},
+									{
+										"concept": "167125AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Sexually transmitted disease (STD) treatment",
+										"conceptMappings": [
+											{
+												"type": "SNOMED-CT",
+												"value": "243120004"
+											},
+											{
+												"type": "CIEL",
+												"value": "167125"
+											}
+										]
+									},
+									{
+										"concept": "a56cdd43-f2eb-49d6-88fd-113aaea2e85f",
+										"label": "HIV Testing for Partners and Social Contacts of People from KP",
+										"conceptMappings": []
+									},
+									{
+										"concept": "161558AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Patient tested for sexually transmitted illness in current visit",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "161558"
+											},
+											{
+												"type": "CIEL",
+												"value": "161558"
+											}
+										]
+									}
+								]
+							},
+							"id": "clientSetsHIVPreventionPlan"
+						}
+					]
+				},
+				{
+					"label": "Disclosure for Children",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Disclosure for Children",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "573f93e2-12f6-483e-aa6e-14e9b76b311a",
+								"answers": [
+									{
+										"concept": "761c9ffb-8a75-44c6-bad3-b62cd700d41c",
+										"label": "DS0 (No disclosure)",
+										"conceptMappings": []
+									},
+									{
+										"concept": "13784dde-37e1-4e40-b224-dbc9701bc605",
+										"label": "DS1 (Stage 1, about the illness, taking medicine, keeping healthy)",
+										"conceptMappings": []
+									},
+									{
+										"concept": "708acbc1-d493-499c-b3e7-67abd685a943",
+										"label": "   DS2 (Stage 2, about germs, body soldiers) ",
+										"conceptMappings": []
+									},
+									{
+										"concept": "37c60d5a-e873-429d-a59f-aeff839ada3c",
+										"label": "DS3 (Stage 3, use of terms like CD4, Viral Load, HIV)",
+										"conceptMappings": []
+									}
+								]
+							},
+							"id": "disclosureForChildren"
+						}
+					]
+				},
+				{
+					"label": "Operation Triple Zero",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Enrolled to OTZ",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "bb251925-c706-420a-a1d1-58fa2b0e0a7e",
+								"answers": [
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes",
+										"conceptMappings": [
+											{
+												"type": "SNOMED-CT",
+												"value": "373066001"
+											},
+											{
+												"type": "PIH",
+												"value": "1065"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1065"
+											},
+											{
+												"type": "CIEL",
+												"value": "1065"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1065"
+											},
+											{
+												"type": "SNOMED CT",
+												"value": "CT: 373066001"
+											}
+										]
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No",
+										"conceptMappings": [
+											{
+												"type": "PIH",
+												"value": "1066"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "373067005"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1066"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1066"
+											}
+										]
+									}
+								]
+							},
+							"id": "enrolledToOTZ"
+						},
+						{
+							"label": "Enrollment Date",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "eth-date",
+								"concept": "160555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "160555"
+									}
+								],
+								"weeksList": ""
+							},
+							"hide": {
+								"hideWhenExpression": "enrolledToOTZ != '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "enrollmentDate"
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"uuid": "xxxx",
+	"referencedForms": [],
+	"encounterType": "136b2ded-22a3-4831-a39a-088d35a50ef5",
+	"allowUnspecifiedAll": true
+}

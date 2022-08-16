@@ -1,0 +1,567 @@
+{
+	"name": "POC Lab Results Form",
+	"pages": [
+		{
+			"label": "Lab Results",
+			"sections": [
+				{
+					"label": "Viral Load",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Viral load done",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "163310AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"answers": [
+									{
+										"concept": "1267AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "1267"
+											},
+											{
+												"type": "CIEL",
+												"value": "1267"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "255594003"
+											}
+										]
+									},
+									{
+										"concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "1118"
+											},
+											{
+												"type": "PIH",
+												"value": "1118"
+											},
+											{
+												"type": "PIH",
+												"value": "2475"
+											},
+											{
+												"type": "CIEL",
+												"value": "1118"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "385660001"
+											}
+										]
+									},
+									{
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Unknown",
+										"conceptMappings": [
+											{
+												"type": "SNOMED CT",
+												"value": "CT: 261665006"
+											},
+											{
+												"type": "CIEL",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "UNKNOWN"
+											},
+											{
+												"type": "HL7-MedicationDispenseStatus",
+												"value": "unknown"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "UNKNOWN"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "CIEL",
+												"value": "1067"
+											}
+										]
+									}
+								],
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "163310"
+									}
+								]
+							},
+							"id": "viralLoadDone"
+						},
+						{
+							"label": "Viral load request date",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "eth-date",
+								"concept": "163281AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "163281"
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "viralLoadDone != '1267AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "viralLoadRequestDate"
+						},
+						{
+							"label": "Viral load received date",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "eth-date",
+								"concept": "c541f044-4cdb-4302-b15c-b9901b22f20e",
+								"weeksList": ""
+							},
+							"hide": {
+								"hideWhenExpression": "viralLoadDone != '1267AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "viralLoadReceivedDate"
+						},
+						{
+							"label": "Viral load count",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"conceptMappings": [
+									{
+										"type": "AMPATH",
+										"value": "856"
+									},
+									{
+										"type": "CIEL",
+										"value": "856"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "315124004"
+									},
+									{
+										"type": "IMO-ProcedureIT",
+										"value": "929811"
+									}
+								],
+								"max": "",
+								"min": "",
+								"showDate": ""
+							},
+							"hide": {
+								"hideWhenExpression": "viralLoadDone != '1267AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "viralLoadCount"
+						},
+						{
+							"label": "Viral load status",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "2dc9ee04-4d12-4606-ae0f-86895bf14a44",
+								"answers": [
+									{
+										"concept": "5d5e42cc-acc4-4069-b3a8-7163e0db5d96",
+										"label": "Suppressed",
+										"conceptMappings": []
+									},
+									{
+										"concept": "a6768be6-c08e-464d-8f53-5f4229508e54",
+										"label": "Unsuppressed",
+										"conceptMappings": []
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "viralLoadDone != '1267AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "viralLoadStatus"
+						}
+					]
+				},
+				{
+					"label": "CD4 ",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "CD4 Done",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "4868dd2d-4d56-4e72-8c89-8658a32a9072",
+								"answers": [
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes",
+										"conceptMappings": [
+											{
+												"type": "SNOMED-CT",
+												"value": "373066001"
+											},
+											{
+												"type": "PIH",
+												"value": "1065"
+											},
+											{
+												"type": "PIH",
+												"value": "1065"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1065"
+											},
+											{
+												"type": "CIEL",
+												"value": "1065"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1065"
+											},
+											{
+												"type": "CIEL",
+												"value": "1065"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "373066001"
+											},
+											{
+												"type": "SNOMED CT",
+												"value": "CT: 373066001"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1065"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1065"
+											}
+										]
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No",
+										"conceptMappings": [
+											{
+												"type": "PIH",
+												"value": "1066"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "373067005"
+											},
+											{
+												"type": "PIH",
+												"value": "1066"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1066"
+											},
+											{
+												"type": "CIEL",
+												"value": "1066"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1066"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "373067005"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1066"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1066"
+											}
+										]
+									}
+								]
+							},
+							"id": "cd4Done"
+						},
+						{
+							"label": "CD4 /mm3",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "5497AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "",
+								"min": "",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "5497"
+									},
+									{
+										"type": "org.openmrs.module.mdrtb",
+										"value": "CD4 COUNT"
+									},
+									{
+										"type": "LOINC",
+										"value": "24467-3"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "313660005"
+									},
+									{
+										"type": "IMO-ProcedureIT",
+										"value": "923416"
+									},
+									{
+										"type": "AMPATH",
+										"value": "5497"
+									},
+									{
+										"type": "PIH",
+										"value": "5497"
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "cd4Done != '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "cd4mm3"
+						},
+						{
+							"label": "CD4 % if < 5 years",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "730AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "100",
+								"min": "0",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "AMPATH",
+										"value": "5498"
+									},
+									{
+										"type": "IMO-ProcedureIT",
+										"value": "32917475"
+									},
+									{
+										"type": "AMPATH",
+										"value": "730"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "313938009"
+									},
+									{
+										"type": "CIEL",
+										"value": "730"
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "cd4Done != '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "cd4IfLess5Years"
+						}
+					]
+				},
+				{
+					"label": "Lab Tests",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Hgb",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "",
+								"min": "",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "AMPATH",
+										"value": "21"
+									},
+									{
+										"type": "CIEL",
+										"value": "21"
+									},
+									{
+										"type": "IMO-ProcedureIT",
+										"value": "930136"
+									},
+									{
+										"type": "AMPATH",
+										"value": "301"
+									},
+									{
+										"type": "AMPATH",
+										"value": "648"
+									},
+									{
+										"type": "PIH-Malawi",
+										"value": "7982"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "441689006"
+									}
+								]
+							},
+							"id": "hgb"
+						},
+						{
+							"label": "ALT",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "654AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "",
+								"min": "",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "654"
+									},
+									{
+										"type": "AMPATH",
+										"value": "654"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "390961000"
+									},
+									{
+										"type": "IMO-ProcedureIT",
+										"value": "687110"
+									}
+								]
+							},
+							"id": "altLabResult"
+						},
+						{
+							"label": "Creatinine/Cr",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "",
+								"min": "",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "790"
+									},
+									{
+										"type": "AMPATH",
+										"value": "790"
+									}
+								]
+							},
+							"id": "creatinine"
+						},
+						{
+							"label": "AST",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "653AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "",
+								"min": "",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "AMPATH",
+										"value": "653"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "250641004"
+									},
+									{
+										"type": "CIEL",
+										"value": "653"
+									},
+									{
+										"type": "IMO-ProcedureIT",
+										"value": "923373"
+									}
+								]
+							},
+							"id": "astLabResult"
+						},
+						{
+							"label": "CrAg",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "163613AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"max": "",
+								"min": "",
+								"showDate": "",
+								"conceptMappings": [
+									{
+										"type": "SNOMED-CT",
+										"value": "315107005"
+									},
+									{
+										"type": "CIEL",
+										"value": "163613"
+									}
+								]
+							},
+							"id": "crAgLabResult"
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"uuid": "xxxx",
+	"referencedForms": [],
+	"encounterType": "136b2ded-22a3-4831-a39a-088d35a50ef5",
+	"allowUnspecifiedAll": true
+}

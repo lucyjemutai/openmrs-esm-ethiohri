@@ -1,0 +1,513 @@
+{
+	"name": "POC OI & Pain Management Form",
+	"pages": [
+		{
+			"label": "OI & Pain Management",
+			"sections": [
+				{
+					"label": "Opportunistic Infection",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Opportunistic Infection Present",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "c52ecf45-bd6c-43ed-861b-9a2714878729",
+								"answers": [
+									{
+										"concept": "131768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes",
+										"conceptMappings": [
+											{
+												"type": "IMO-ProblemIT",
+												"value": "23985"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "7388"
+											},
+											{
+												"type": "CIEL",
+												"value": "131768"
+											},
+											{
+												"type": "PIH",
+												"value": "1607"
+											},
+											{
+												"type": "PIH",
+												"value": "1731"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "61274003"
+											},
+											{
+												"type": "PIH",
+												"value": "1401"
+											}
+										]
+									},
+									{
+										"concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No",
+										"conceptMappings": [
+											{
+												"type": "PIH-Malawi",
+												"value": "1107"
+											},
+											{
+												"type": "PIH",
+												"value": "1107"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1107"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "260413007"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "NONE"
+											},
+											{
+												"type": "CIEL",
+												"value": "1107"
+											}
+										]
+									},
+									{
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Unknown",
+										"conceptMappings": [
+											{
+												"type": "SNOMED CT",
+												"value": "CT: 261665006"
+											},
+											{
+												"type": "CIEL",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "UNKNOWN"
+											},
+											{
+												"type": "HL7-MedicationDispenseStatus",
+												"value": "unknown"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "UNKNOWN"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "CIEL",
+												"value": "1067"
+											}
+										]
+									}
+								]
+							},
+							"id": "opportunisticInfectionPresent"
+						},
+						{
+							"label": "Current Opportunistic Infections",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "6bdf2636-7da1-4691-afcc-5eede094138f",
+								"answers": [
+									{
+										"concept": "145872AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Cerebral Cryptococcosis",
+										"conceptMappings": []
+									},
+									{
+										"concept": "120781AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Cervical Intraepithelial Neoplasm",
+										"conceptMappings": []
+									},
+									{
+										"concept": "120330AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Coccidioidomycosis",
+										"conceptMappings": []
+									},
+									{
+										"concept": "142963AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Cytomegalovirus infection",
+										"conceptMappings": []
+									},
+									{
+										"concept": "111759AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Hepatitis B",
+										"conceptMappings": []
+									},
+									{
+										"concept": "156590AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "hepatitis C virus infection",
+										"conceptMappings": []
+									},
+									{
+										"concept": "153466AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "herpes simplex type 2 infection",
+										"conceptMappings": []
+									},
+									{
+										"concept": "117543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Herpes zoster",
+										"conceptMappings": []
+									},
+									{
+										"concept": "117514AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Histoplasmosis",
+										"conceptMappings": []
+									},
+									{
+										"concept": "160442AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "HIV encephalopathy",
+										"conceptMappings": []
+									},
+									{
+										"concept": "137480AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Infection due to Candida Albicans",
+										"conceptMappings": []
+									},
+									{
+										"concept": "116322AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Leukoencephalopathy",
+										"conceptMappings": []
+									},
+									{
+										"concept": "116104AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Malignant Lymphoma",
+										"conceptMappings": []
+									},
+									{
+										"concept": "160007AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Mycobacterium tuberculosis",
+										"conceptMappings": []
+									},
+									{
+										"concept": "882AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Pneumocystis carinii pneumonia",
+										"conceptMappings": []
+									},
+									{
+										"concept": "114100AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Pneumonia",
+										"conceptMappings": []
+									},
+									{
+										"concept": "128139AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Pulmonary Cryptococcosis",
+										"conceptMappings": []
+									},
+									{
+										"concept": "127198AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Salmonella Septicaemia",
+										"conceptMappings": []
+									},
+									{
+										"concept": "5355AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Toxoplasmosis",
+										"conceptMappings": []
+									},
+									{
+										"concept": "823AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Wasting syndrome",
+										"conceptMappings": []
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "opportunisticInfectionPresent != '131768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "currentOpportunisticInfections"
+						}
+					]
+				},
+				{
+					"label": "Pain Management",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Assessed for pain",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "7c67f18a-d9ff-4e4c-8c55-35ea70b9c697",
+								"answers": [
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Yes",
+										"conceptMappings": [
+											{
+												"type": "SNOMED-CT",
+												"value": "373066001"
+											},
+											{
+												"type": "PIH",
+												"value": "1065"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1065"
+											},
+											{
+												"type": "CIEL",
+												"value": "1065"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1065"
+											},
+											{
+												"type": "SNOMED CT",
+												"value": "CT: 373066001"
+											}
+										]
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No",
+										"conceptMappings": [
+											{
+												"type": "PIH",
+												"value": "1066"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "373067005"
+											},
+											{
+												"type": "PIH-Malawi",
+												"value": "1066"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1066"
+											}
+										]
+									},
+									{
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Unknown",
+										"conceptMappings": [
+											{
+												"type": "SNOMED CT",
+												"value": "CT: 261665006"
+											},
+											{
+												"type": "CIEL",
+												"value": "1067"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "UNKNOWN"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											}
+										]
+									}
+								]
+							},
+							"id": "assessedForPain"
+						},
+						{
+							"label": "WHO pain scale",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "166000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"answers": [
+									{
+										"concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "No pain",
+										"conceptMappings": [
+											{
+												"type": "PIH-Malawi",
+												"value": "1107"
+											},
+											{
+												"type": "PIH",
+												"value": "1107"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1107"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "260413007"
+											},
+											{
+												"type": "org.openmrs.module.mdrtb",
+												"value": "NONE"
+											},
+											{
+												"type": "CIEL",
+												"value": "1107"
+											}
+										]
+									},
+									{
+										"concept": "1498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "WHO Step 1",
+										"conceptMappings": [
+											{
+												"type": "PIH",
+												"value": "1901"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "255604002"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1743"
+											},
+											{
+												"type": "CIEL",
+												"value": "1498"
+											}
+										]
+									},
+									{
+										"concept": "1499AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "WHO Step 2",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "1744"
+											},
+											{
+												"type": "CIEL",
+												"value": "1499"
+											},
+											{
+												"type": "PIH",
+												"value": "1900"
+											},
+											{
+												"type": "PIH",
+												"value": "1907"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "6736007"
+											}
+										]
+									},
+									{
+										"concept": "1500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "WHO Step 3",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1500"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "24484000"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1745"
+											},
+											{
+												"type": "PIH",
+												"value": "1903"
+											}
+										]
+									}
+								],
+								"conceptMappings": [
+									{
+										"type": "LOINC",
+										"value": "75260-0"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "405161002"
+									},
+									{
+										"type": "CIEL",
+										"value": "166000"
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "assessedForPain != '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							},
+							"id": "whoPainScale"
+						}
+					]
+				},
+				{
+					"label": "Other Medication",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Intake Notes\\Comments",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "textarea",
+								"concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rows": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "161011"
+									}
+								]
+							},
+							"id": "intakeNotes"
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"uuid": "xxxx",
+	"referencedForms": [],
+	"encounterType": "136b2ded-22a3-4831-a39a-088d35a50ef5",
+	"allowUnspecifiedAll": true
+}
