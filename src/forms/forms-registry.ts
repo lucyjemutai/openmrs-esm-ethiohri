@@ -3,6 +3,7 @@ import intake_b_1_0 from "./intake-b/1.0.json";
 import family_information_1_0 from "././family-members/1.0.json";
 import phdp_1_0 from "./phdp/1.0.json";
 import followup_1_0 from "./followup/1.0.json";
+import general_information_1_0 from "./general-information/1.0.json";
 import tuberculosis_1_0 from "./tuberculosis/1.0.json";
 import cervical_cancer_1_0 from "./cervical-cancer/1.0.json";
 import oi_and_pain_management_1_0 from "./oi-and-pain-management/1.0.json";
@@ -27,6 +28,9 @@ export default {
     },
     followup: {
       "1.0": followup_1_0,
+    },
+    general_information: {
+      "1.0": general_information_1_0,
     },
     tuberculosis: {
       "1.0": tuberculosis_1_0,

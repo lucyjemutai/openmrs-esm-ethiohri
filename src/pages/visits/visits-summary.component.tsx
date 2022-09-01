@@ -3,6 +3,7 @@ import React from "react";
 import ARVDispensingEncounterList from "./tabs/arv-dispensing.component";
 import CervicalCancerEncounterList from "./tabs/cervical-cancer.component";
 import FollowupEncounterList from "./tabs/followup.component";
+import GeneralInformationEncounterList from "./tabs/general-information.component";
 import HIVPreventionEncounterList from "./tabs/hiv-prevention.component";
 import LabResultsEncounterList from "./tabs/lab-results.component";
 import OIAndPainManagementEncounterList from "./tabs/oi-and-pain-management.component";
@@ -18,6 +19,9 @@ const VisitsSummary: React.FC<{ patientUuid: string }> = ({ patientUuid }) => {
       <Tabs type="container">
         <Tab label="Follow-Up">
           <FollowupEncounterList patientUuid={patientUuid} />
+        </Tab>
+        <Tab label="General Information">
+          <GeneralInformationEncounterList patientUuid={patientUuid} />
         </Tab>
         <Tab label="Tuberculosis">
           <TuberculosisEncounterList patientUuid={patientUuid} />
